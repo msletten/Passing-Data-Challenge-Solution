@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MSDetailViewController.h"
 
-@interface MSViewController : UIViewController
+@interface MSViewController : UIViewController <MSDetailViewControllerDelegate, UITextFieldDelegate>
+
+@property (strong, nonatomic) IBOutlet UITextField *emptyTextField;
+
 
 @end
